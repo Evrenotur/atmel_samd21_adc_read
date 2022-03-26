@@ -5,7 +5,7 @@
  *  Author: SOFTWARE
  */ 
 
-
+// struct animatar
 typedef struct
 {
 	uint8_t buffer[2];
@@ -17,3 +17,4 @@ int  ADC_Read(ADC_ReadTypeDef_t * ADC_ReadTypeDef);
 
 void adc_enable();
 
+uint8_t Adc_Read(void);
