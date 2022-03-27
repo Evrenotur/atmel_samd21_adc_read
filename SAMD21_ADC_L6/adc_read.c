@@ -23,7 +23,7 @@ int ADC_Read(ADC_ReadTypeDef_t * ADC_ReadTypeDef)
 		
 	 return -1;
 	}
-	ADC_ReadTypeDef->PA06_ADC_value = (ADC_ReadTypeDef->buffer[1] << 8) + ADC_ReadTypeDef->buffer[0];
-	
+	//ADC_ReadTypeDef->PA06_ADC_value = (ADC_ReadTypeDef->buffer[1] << 8) + ADC_ReadTypeDef->buffer[0];
+	ADC_ReadTypeDef->sum = ADC_ReadTypeDef->PA06_ADC_value;
 	return 0;
 }

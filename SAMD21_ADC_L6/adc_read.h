@@ -9,7 +9,8 @@
 typedef struct
 {
 	uint8_t buffer[2];
-	int PA06_ADC_value;
+	int16_t PA06_ADC_value;
+	uint32_t sum;
 	
 }ADC_ReadTypeDef_t;
 

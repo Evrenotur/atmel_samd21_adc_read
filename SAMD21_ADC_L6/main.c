@@ -15,7 +15,7 @@ int main(void)
 		ADC_ReadTypeDef_t  adc_read;
 		ret=ADC_Read(&adc_read);
 		if(ret==0){
-			printf("PA06=%03d\r\n",adc_read.PA06_ADC_value);
+			printf("PA06=%03d\r\n",adc_read.sum);
 			
 				delay_ms(250);
 			
